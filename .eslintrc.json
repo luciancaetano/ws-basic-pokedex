@@ -62,11 +62,12 @@
           "extendDefaults": false
         }
       ],
+      "react/jsx-props-no-spreading": "off",
       "no-use-before-define": "off",
       "import/no-relative-parent-imports": "error",
       "jsx-a11y/tabindex-no-positive": "off",
       "react/require-default-props": "off",
-      "react/prop-types": "off",
+      "react/prop-types": "error",
       "class-methods-use-this": "off",
       "@typescript-eslint/semi": "error",
       "@typescript-eslint/member-delimiter-style": "error",
