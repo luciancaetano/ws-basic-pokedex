@@ -1,0 +1,15 @@
+{
+    "compilerOptions" : {
+        "paths": {
+            "@components/hooks": ["src/app/components/hooks/index"],
+            "@components/elements": ["src/app/components/elements/index"],
+            "@components/views": ["src/app/components/views/index"],
+            "@redux/actions/*": ["src/app/redux/actions/*"],
+            "@utils*": ["src/app/utils/*"],
+            "@types": ["src/app/types/index"],
+            "@components/partials": ["src/app/components/partials/index"],
+            "@media/*": ["src/media/*"],
+            "@styles/*": ["src/styles/*"]
+        }
+    }
+}
