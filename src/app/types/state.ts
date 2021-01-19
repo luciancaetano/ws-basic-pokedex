@@ -14,27 +14,28 @@ export interface IPokemonStats {
   evasion: number;
 }
 
-export interface IProkeMonListItem {
+export interface IPokemonAbility{
+  name: string;
+  description: string;
+}
+export interface IPokemonListItem {
   id: number;
   name: string;
   image: string;
   isFull: boolean;
   types: Array<TPokemonTypes>;
-  weaknesses: Array<TPokemonTypes>;
-  strongAgainst: Array<TPokemonTypes>;
   height: number; // 1...99...2000
   weight: number; // 1...4999...9999
   stats: IPokemonStats;
+  abilities?: Array<IPokemonAbility>;
+  description?: string;
 }
-
 export interface IPokeDexState {
   loading: boolean;
-  items: Record<number, IProkeMonListItem>;
+  items: Record<number, IPokemonListItem>;
   error: boolean;
   loadingItems: Record<number, boolean>;
   count: number;
-  generationsSpecies: Record<number, Array<string>>;
-  loadingGenerations: boolean;
 }
 
 export interface IAppState{

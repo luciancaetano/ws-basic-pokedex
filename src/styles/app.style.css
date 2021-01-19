@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  --pokemon-type-color-normal: #B5B9C4;
+  --pokemon-type-color-normal-darken: #a3a7b1;
+  --pokemon-type-color-normal-text: #333;
+
+  --pokemon-type-color-fighting: #EB4971;
+  --pokemon-type-color-fighting-darken: #c53c5e;
+  --pokemon-type-color-fighting-text: #ffff;
+
+  --pokemon-type-color-flying: #748FC9;
+  --pokemon-type-color-flying-darken: #596f9e;
+  --pokemon-type-color-flying-text: #fff;
+
+  --pokemon-type-color-poison: #9F6E97;
+  --pokemon-type-color-poison-darken: #7a5574;
+  --pokemon-type-color-poison-text: #fff;
+
+  --pokemon-type-color-ground: #F78551;
+  --pokemon-type-color-ground-darken: #d47245;
+  --pokemon-type-color-ground-text: #fff;
+
+  --pokemon-type-color-rock: #c9c9c9;
+  --pokemon-type-color-rock-darken: #9c9c9c;
+  --pokemon-type-color-rock-text: #333;
+
+  --pokemon-type-color-bug: #8BD674;
+  --pokemon-type-color-bug-darken: #6fac5d;
+  --pokemon-type-color-bug-text: #fff;
+
+  --pokemon-type-color-ghost: #d3d3d3;
+  --pokemon-type-color-ghost-darken: #979595;
+  --pokemon-type-color-ghost-text: #fff;
+
+  --pokemon-type-color-steel: #B5B9C4;
+  --pokemon-type-color-steel-darken: #979ba5;
+  --pokemon-type-color-steel-text: #fff;
+
+  --pokemon-type-color-fire: #FFA756;
+  --pokemon-type-color-fire-darken: #e78c36;
+  --pokemon-type-color-fire-text: #fff;
+
+  --pokemon-type-color-water: #58ABF6;
+  --pokemon-type-color-water-darken: #3d94e0;
+  --pokemon-type-color-water-text: #fff;
+
+  --pokemon-type-color-grass: #8BBE8A;
+  --pokemon-type-color-grass-darken: #529451;
+  --pokemon-type-color-grass-text: #fff;
+
+  --pokemon-type-color-electric: #F2CB55;
+  --pokemon-type-color-electric-darken: #c7a339;
+  --pokemon-type-color-electric-text: #fff;
+
+  --pokemon-type-color-psychic: #9F6E97;
+  --pokemon-type-color-psychic-darken: #814c78;
+  --pokemon-type-color-psychic-text: #fff;
+
+  --pokemon-type-color-ice: #58ABF6;
+  --pokemon-type-color-ice-darken: #4989c2;
+  --pokemon-type-color-ice-text: #fff;
+
+  --pokemon-type-color-dragon: #FFA756;
+  --pokemon-type-color-dragon-darken: #c0603a;
+  --pokemon-type-color-dragon-text: #fff;
+
+  --pokemon-type-color-dark: #696969;
+  --pokemon-type-color-dark-darken: #4e4b4b;
+  --pokemon-type-color-dark-text: #fff;
+
+  --pokemon-type-color-fairy: #EBA8C3;
+  --pokemon-type-color-fairy-darken: #d67b9f;
+  --pokemon-type-color-fairy-text: #fff;
+
+  --pokemon-type-color-unknown: #B5B9C4;
+  --pokemon-type-color-unknown-darken: #a3a7b1;
+  --pokemon-type-color-unknown-text: #fff;
+
+  --pokemon-type-color-shadow: #696969;
+  --pokemon-type-color-shadow-darken: #4e4b4b;
+  --pokemon-type-color-shadow-text: #fff;
+}

@@ -6,16 +6,17 @@ import {
   Redirect,
 } from 'react-router-dom';
 import * as views from '@components/views';
+import { AppLayout } from '@components/partials';
 
 const AppRouter = () => (
   <Router>
-    <Switch>
-      <Route path="/list" render={(props: any) => <views.PokemonsListView {...props} />} />
-      <Route path="/info/about/:id" render={(props: any) => <views.AboutPokemon {...props} />} />
-      <Route path="/info/evolutions/:id" render={(props: any) => <views.PokemonEvolution {...props} />} />
-      <Route path="/info/stats/:id" render={(props: any) => <views.PokemonStats {...props} />} />
-      <Redirect to="/list" from="/" />
-    </Switch>
+    <AppLayout>
+      <Switch>
+        <Route path="/list" render={(props: any) => <views.PokemonsListView {...props} />} />
+        <Route path="/info/:id" render={(props: any) => <views.PokemonInfo {...props} />} />
+        <Redirect to="/list" from="/" />
+      </Switch>
+    </AppLayout>
   </Router>
 );
 

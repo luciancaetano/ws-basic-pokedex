@@ -1,6 +1,6 @@
 import {
   POKELIST_GET_POKEMONS_ERROR, POKELIST_GET_POKEMONS_LOADING, POKELIST_GET_POKEMONS_SUCCESS,
-  POKELIST_GET_GENERATIONS_LOADING, POKELIST_GET_GENERATIONS_SUCCESS, POKELIST_GET_GENERATIONS_ERROR,
+  POKELIST_GET_DETAILED_POKEMON_LOADING, POKELIST_GET_DETAILED_POKEMON_SUCCESS, POKELIST_GET_DETAILED_POKEMON_ERROR,
 } from '@redux/actions/pokedex.actions';
 import { IPokeDexState } from '@types';
 import createReducer from '@utils/createReducer';
@@ -15,8 +15,6 @@ const initialState:Immutable<IPokeDexState> = immutable<IPokeDexState>({
   error: false,
   loadingItems: {},
   count: 0,
-  generationsSpecies: {},
-  loadingGenerations: false,
 });
 
 export const pokeDexReducer = createReducer<typeof initialState>(initialState, {
@@ -37,14 +35,14 @@ export const pokeDexReducer = createReducer<typeof initialState>(initialState, {
       .set('count', action.payload.count);
   },
 
-  [POKELIST_GET_GENERATIONS_LOADING]: (state) => state
-    .set('loadingGenerations', true).set('error', false),
+  [POKELIST_GET_DETAILED_POKEMON_LOADING]: (state, action) => state
+    .setIn(['loadingItems', action.payload.id], true),
 
-  [POKELIST_GET_GENERATIONS_ERROR]: (state) => state
-    .set('loadingGenerations', false).set('error', true),
+  [POKELIST_GET_DETAILED_POKEMON_SUCCESS]: (state, action) => state
+    .setIn(['loadingItems', action.payload.id], false)
+    .setIn(['items', action.payload.id], action.payload.pokemon),
 
-  [POKELIST_GET_GENERATIONS_SUCCESS]: (state, action) => state
-    .set('loadingGenerations', true)
-    .set('generationsSpecies', action.payload),
-
+  [POKELIST_GET_DETAILED_POKEMON_ERROR]: (state, action) => state
+    .setIn(['loadingItems', action.payload.id], false)
+    .set('error', true),
 });
