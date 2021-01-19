@@ -70,7 +70,7 @@ export const AboutPageContainerStyles = styled.div`
         font-family: sans-serif;
         font-style : normal;
         font-weight: bold;
-        font-size  : 17vw;
+        font-size  : 97px;
         z-index: 1;
         line-height: 31px;
         padding-top: 30px;
