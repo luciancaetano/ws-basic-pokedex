@@ -16,6 +16,7 @@ export const AboutPageContainerStyles = styled.div`
     display: flex;
     height: 50px;
     padding: 5px;
+    z-index: 9;
   }
 
   .heading-container{
